@@ -33,13 +33,10 @@
 			<label for="nombre">Nombre</label>
 			<input name="nombre" type="text" placeholder="Escribe tu nombre" required>
 			
-			<label for="email">Email <!--el 'for' debe coincidir con el 'name'-->
-			<input name="email" type="email" placeholder="Escribe tu email" required>
+			<label for="password">Contraseña <!--el 'for' debe coincidir con el 'name'-->
+			<input name="password" type="password" placeholder="Escribe tu contraseña"required>
 			</label>
-			
-			<label for="poblacion">Poblacion</label>
-			<input name="poblacion" type="text" placeholder="Escribe tu poblacion" required>
-			<button class="btn btn-primary" type="submit">Enviar</button>
+			<button>Enviar</button>
 		</form>
 	</div>
  <?php include("includes/footer.php");?>

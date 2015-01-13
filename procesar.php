@@ -1,13 +1,40 @@
-<?php include("includes/header.php");?>
-<div class="container">
 <?php 
-	//recojo las variables del formulario
 	$nombre=$_POST['nombre'];
-	$email=$_POST['email'];
-	$poblacion=$_POST['poblacion'];
-	include("Includes/funcion.php");
-	
-	echo "<p>".sobreMi($nombre,$email,$poblacion)."<p>";
+	$password=$_POST['password'];
+	if($nombre=='Angela'&& $password=='3040'){
+		echo "Bieeeen $nombre";
+		header('Location:UsuarioA.php');
+		exit;
+	}
+	else{
+		if($nombre=='Nicolas'&& $password=='polluelo'){
+		echo "Bieeeen $nombre";
+			header('Location:UsuarioB.php');
+			exit;
+		}
+		else{
+			if($nombre=='Vero'&& $password=='coquito'){
+			echo "Bieeeen $nombre";
+			header('Location:UsuarioC.php');
+			exit;
+			}
+			else{
+				if($nombre=='Rosa'&& $password=='rivas'){
+				echo "Bieeeen $nombre";
+				header('Location:UsuarioD.php');
+				exit;
+				}
+				else{
+					if($nombre=='Eva'&& $password=='perea'){
+					echo "Bieeeen $nombre";
+					header('Location:UsuarioB.php');
+					exit;
+					}
+					else{
+						exit;
+					}
+				}
+			}
+		}
+	}		
 ?>
-</div>
-<?php include("includes/footer.php");?>
